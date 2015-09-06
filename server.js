@@ -37,7 +37,7 @@ app.post('/messages', function (req, res) {
 io.on('connection', function(socket) {
 	console.log('Client connected');
 
-	socket.on('disconnected', function() {
+	socket.on('disconnect', function() {
 		console.log('Client disconnected');
 	});
 
